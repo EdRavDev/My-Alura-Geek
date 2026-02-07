@@ -648,10 +648,17 @@ footer {
 /* Specific Phone Optimizations (iPhone/Android) */
 @media (max-width: 480px) {
 
-    /* Header: Scale down elements to fit tight width */
+    /* Header: Scale down elements to fit tight width and remove sticky behavior */
     .header-container {
         padding: 0 0.5rem;
     }
+
+    /* Override sticky header on mobile so it scrolls away */
+    header {
+        position: relative;
+        top: auto;
+    }
+
 
     .logo-edrav {
         height: 50px;
