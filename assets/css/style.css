@@ -1,4 +1,8 @@
 /*HTML*/
+* {
+    box-sizing: border-box;
+}
+
 :root {
     --bg-color: #000000;
     --bg-gradient: linear-gradient(180deg, #16222A 0%, #3A6073 0%, #000000 100%);
@@ -112,6 +116,8 @@ body {
     width: 100%;
     min-height: 100vh;
     /* Ensure full viewport height */
+    overflow-x: hidden;
+    /* Prevent horizontal scroll */
     background: var(--bg-gradient);
     /* Use gradient instead of solid color */
     background-attachment: fixed;
@@ -616,8 +622,12 @@ footer {
     }
 
     .container__footer {
-        flex-direction: column;
-        gap: 1rem;
+        flex-direction: row;
+        /* Changed from column to row */
+        flex-wrap: wrap;
+        /* Allow wrapping if needed */
+        justify-content: center;
+        gap: 1.5rem;
         text-align: center;
         height: auto;
         /* Allow auto height for stacked column */
