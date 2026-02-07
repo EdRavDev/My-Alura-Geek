@@ -318,6 +318,8 @@ header {
     text-align: center;
     width: 100%;
     font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    /* User requested white text for card info/title */
 }
 
 .card_info p {
