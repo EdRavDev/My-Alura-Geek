@@ -8,6 +8,8 @@ El proyecto esta pensado para ser un gestor de juegos personales.
 El footer se mantiene igual al original mostrando logos de AluraGeek, logo personal y logo GitHub.
 Estos logos te reedireccionan a sus respectivas paginas. En caso de AluraGeek te lleva a la pagina de cursos de Alura, en caso de mi logo te lleva a mi portafolio personal (se esta trabajndo uno nuevo asi que ese es el anterior desactualizado) y en caso de GitHub te lleva a mi perfil de GitHub.
 
+## Checar cambios en el codigo en GitHub
+
 ##  Tecnologías Utilizadas
 - HTML5
 - CSS3 (Grid, Flexbox, Variables CSS)
