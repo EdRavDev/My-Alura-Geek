@@ -1,8 +1,11 @@
 /*HTML*/
 :root {
     --bg-color: #000000;
+    --bg-gradient: linear-gradient(180deg, #16222A 0%, #3A6073 0%, #000000 100%);
+    /* Strong Blue to Black */
     /* Dark background default */
-    --text-color: #8C0375;
+    --text-color: rgb(33, 92, 148);
+    /* Dark Blue like cards */
     --card-bg: rgb(33, 92, 148);
     --header-bg: rgba(33, 92, 148, 0.3);
     /* Transparent for Header */
@@ -10,7 +13,12 @@
     --glow-color: rgba(0, 210, 255, 0.3);
     --title-stroke: #ffffff;
     /* White stroke for visibility in dark mode */
-    --item-bg: black;
+    --item-bg: #1a1b26;
+    /* Subtle dark blue-grey for sections */
+
+    /* Title Customization */
+    --title-color: rgb(33, 92, 148);
+    /* Dark Blue like cards */
 
     /* Form Customization (Dark Mode) */
     --form-text-color: #ffffff;
@@ -21,6 +29,8 @@
 
 .light-mode {
     --bg-color: #f0f0f0;
+    --bg-gradient: linear-gradient(180deg, #ffffff 0%, #c4cbd6 50%, #b39ddb 100%);
+    /* Stronger Lilac/Gray */
     --text-color: #5a024c;
     --card-bg: #e0d0ff;
     /* Lilac for cards/footer */
@@ -31,6 +41,10 @@
     --title-stroke: black;
     /* Black stroke for light mode */
     --item-bg: #e0e0e0;
+
+    /* Title Customization */
+    --title-color: #8C0375;
+    /* Purple for Light Mode */
 
     /* Form Customization (Light Mode) */
     --form-text-color: #5a024c;
@@ -96,10 +110,14 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
-    background-color: var(--bg-color);
+    min-height: 100vh;
+    /* Ensure full viewport height */
+    background: var(--bg-gradient);
+    /* Use gradient instead of solid color */
+    background-attachment: fixed;
+    /* Keep gradient fixed while scrolling */
     color: var(--text-color);
-    transition: background-color 0.3s, color 0.3s;
+    transition: background 0.3s, color 0.3s;
 }
 
 /*header*/
@@ -185,7 +203,8 @@ header {
     margin-bottom: 2rem;
     margin-top: 2rem;
     text-align: center;
-    color: #8C0375;
+    color: var(--title-color);
+    /* Updated to use variable */
     font-family: 'Bungee Shade', cursive;
     -webkit-text-stroke: 2px;
     -webkit-text-stroke-color: var(--title-stroke);
@@ -201,7 +220,8 @@ header {
     margin-bottom: 2rem;
     margin-top: 2rem;
     text-align: center;
-    color: #8C0375;
+    color: var(--title-color);
+    /* Updated to use variable */
     font-family: 'Bungee Shade', cursive;
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: var(--title-stroke);
@@ -339,7 +359,8 @@ header {
     margin-bottom: 2rem;
     margin-top: 2rem;
     text-align: center;
-    color: #8C0375;
+    color: var(--title-color);
+    /* Updated to use variable */
     font-family: 'Bungee Shade', cursive;
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: var(--title-stroke);
@@ -435,7 +456,8 @@ header {
 /*juegos terminados(card titutlo)*/
 /*juegos terminados(card titutlo)*/
 .juegos_terminados__titulo {
-    color: #8C0375;
+    color: var(--title-color);
+    /* Updated to use variable */
     font-family: 'Bungee Shade', cursive;
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: var(--title-stroke);
@@ -610,5 +632,64 @@ footer {
         height: auto;
         /* Let height adjust naturally */
         margin: 0;
+    }
+}
+
+/* Specific Phone Optimizations (iPhone/Android) */
+@media (max-width: 480px) {
+
+    /* Header: Scale down elements to fit tight width */
+    .header-container {
+        padding: 0 0.5rem;
+    }
+
+    .logo-edrav {
+        height: 50px;
+        /* Significantly smaller */
+    }
+
+    .logo-property {
+        height: 25px;
+        /* Smaller middle logo */
+    }
+
+    .control-btn img {
+        width: 35px;
+        height: 35px;
+        /* Smaller buttons */
+    }
+
+    .header-left,
+    .header-right {
+        gap: 8px;
+        /* Tighter spacing */
+    }
+
+    /* Titles: Prevent overflow and wrapping issues */
+    .web_titulo,
+    .juegos_terminados__titulo,
+    .card_titulos,
+    .agregar_juegos__titulo {
+        font-size: 1.8rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    /* Footer: More compact vertical stack */
+    .container__footer {
+        gap: 1rem;
+        padding: 1rem;
+        height: auto;
+    }
+
+    .footer-link img {
+        max-width: 100px;
+        /* Smaller footer logos */
+    }
+
+    /* Layout: Reduce padding for maximum space */
+    .layout {
+        padding: 0.5rem;
+        gap: 1rem;
     }
 }

@@ -1,6 +1,12 @@
 # Proyecto AluraGeek
 
-Este es mi versión del proyecto AluraGeek. Se trabajó con HTML, CSS y JavaScript asíncrono, uso del DOM para la interactividad, responsive design con media queries, además de que se trabajó con Supabase para la base de datos y almacenamiento de imágenes.
+Este es mi versión del proyecto AluraGeek. Se trabajó con HTML, CSS y JavaScript asíncrono, uso del DOM para la interactividad, responsive design con media queries para dispositivos móviles, además de que se trabajó con Supabase para la base de datos y almacenamiento de imágenes.
+
+El proyecto cuenta con un tema oscuro y un tema claro. A diferencia del Challenge este no se enfoca a una pagina de ventas, sin enbargo tiene la misma tematica en cuanto a funcionalidad, formulario para agregar juegos, cards para mostrar los juegos, boton para eliminar juegos y boton para marcar como terminado. Al igual se agrego un boton para volver al inicio.
+El proyecto esta pensado para ser un gestor de juegos personales. 
+
+El footer se mantiene igual al original mostrando logos de AluraGeek, logo personal y logo GitHub.
+Estos logos te reedireccionan a sus respectivas paginas. En caso de AluraGeek te lleva a la pagina de cursos de Alura, en caso de mi logo te lleva a mi portafolio personal (se esta trabajndo uno nuevo asi que ese es el anterior desactualizado) y en caso de GitHub te lleva a mi perfil de GitHub.
 
 ##  Tecnologías Utilizadas
 - HTML5
