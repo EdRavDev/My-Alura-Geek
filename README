@@ -1,0 +1,75 @@
+Proyecto Challenge ALuraGeek pero mi version.
+
+Este proyecto es para mostrar productos a la venta y agregar nuevos productos
+esta compuesto por 3 archivos:
+- index.html: Contiene la estructura de la pagina.
+- style.css: Contiene los estilos de la pagina.
+- app.js: Contiene la logica de la pagina.
+Igualmente tiene una carpeta de imagenes que contiene las imagenes de los productos
+banners utilizados en el proyecto.
+
+Se esta trabajando con containers para organizar los productos y banners
+al igual que flexbox y grid dentro de CSS para dimensionar los espacios
+de la pagina. Se agrega menu responsive para dispositivos moviles y tablets mediante
+JavaScript y CSS.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+documentacion cambios con agent manager
+
+¡Claro que sí! Aquí tienes un resumen de todos los cambios que hemos implementado en tu proyecto paso a paso:
+
+1. Estructura HTML (
+index.html
+)
+Limpieza: Eliminamos algunas etiquetas </section> que sobraban y podían romper el diseño.
+Clases nuevas: Le pusimos la clase title_section a la sección del título principal ("EDRAV'S GAMES") para poder controlarla mejor desde CSS.
+Footer independiente: Sacamos la etiqueta <footer> fuera del contenedor <main class="layout">.
+¿Por qué? El <main> tiene márgenes (padding), y si el footer se quedaba adentro, nunca podría tocar los bordes de la pantalla. Al sacarlo, ya puede ocupar el 100% del ancho real.
+2. Diseño CSS (
+style.css
+)
+Cambiamos cómo se distribuyen los elementos en la pantalla usando CSS Grid:
+
+El Contenedor Principal (.layout):
+Lo dividimos en dos columnas asimétricas: grid-template-columns: 2fr 1fr;.
+Esto significa que la columna izquierda (Juegos) es el doble de ancha que la columna derecha (Formulario).
+Ubicación de Elementos:
+Título Principal y Juegos Terminados: Les dijimos grid-column: 1 / -1;. Esto hace que ignoren la división de columnas y se estiren de lado a lado dentro del contenedor.
+Lista de Juegos (.games): La forzamos a quedarse en la columna 1 (Izquierda).
+Formulario (.agregar_juegos): Lo forzamos a quedarse en la columna 2 (Derecha).
+Tarjetas de Juegos (.cards_grid):
+Antes tenías 3 columnas fijas.
+Lo cambiamos a repeat(auto-fit, minmax(150px, 1fr)).
+Traducción: Las tarjetas ahora son inteligentes. Si tienen espacio, se ponen una al lado de la otra; si la columna se hace estrecha (como ahora que comparte espacio con el formulario), las tarjetas bajan automáticamente sin romperse.
+En resumen: Tienes un diseño de dos columnas con un encabezado y pie de página robustos, y un sistema de tarjetas que se adapta al espacio disponible.

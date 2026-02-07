@@ -1,0 +1,25 @@
+{
+  "juegos": [
+    {
+      "id": 1,
+      "nombre": "Hogwarts Legacy",
+      "plataforma": "PC",
+      "imagen": "cards games/HWL.jpeg",
+      "terminado": false
+    },
+    {
+      "id": 2,
+      "nombre": "Quintillizas Game",
+      "plataforma": "PC",
+      "imagen": "cards games/quintillizasgame.webp",
+      "terminado": false
+    },
+    {
+      "id": 3,
+      "nombre": "Genshin Impact",
+      "plataforma": "PC-Mobil",
+      "imagen": "cards games/genshin-impact-vs-honkai-star-rail-in-music-ost-themes-v0-pu1afxbgb09g1.jpg",
+      "terminado": false
+    }
+  ]
+}

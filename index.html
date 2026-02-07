@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="esp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--googlefontstitle-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Bungee+Shade&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <!-- Left: Home + Edrav Logo -->
+            <div class="header-left">
+                <button id="btn-home" class="control-btn" title="Ir al inicio">
+                    <img src="imagenes/home.png" alt="Home">
+                </button>
+                <img src="imagenes/edrav2.png" alt="Edrav Logo" class="logo-edrav">
+            </div>
+
+            <!-- Center: Property Logo -->
+            <div class="header-center">
+                <img src="imagenes/Property 1=Black.svg" alt="Property Logo" class="logo-property">
+            </div>
+
+            <!-- Right: Theme Toggle -->
+            <div class="header-right">
+                <button id="theme-toggle" class="control-btn" title="Cambiar Tema">
+                    <!-- Default to Moon (for Dark Mode active) or Sun depending on logic.
+                         JS will handle the src, but let's set a default -->
+                    <img src="imagenes/moon.png" alt="Tema" id="theme-icon">
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="layout">
+        <!--titulo web-->
+        <section class="title_section">
+            <h1 class="web_titulo">EDRAV´S GAMES</h1>
+
+        </section>
+        <!--secciopn para las cards dejuegos-->
+        <section class="games">
+            <h1 class="card_titulos">JUEGOS PENDIENTES</h1>
+
+            <div class="cards_grid">
+                <!-- Las cards se cargarán con JavaScript desde db.json -->
+            </div>
+        </section>
+
+        <!--aqui empiza formulario o seccion para agregar juegos-->
+
+        <section class="agregar_juegos">
+            <h1 class="agregar_juegos__titulo">AGREGAR JUEGOS</h1>
+
+            <div class="agregar_juegos__container">
+                <form>
+                    <label>
+                        Nombre del juego:
+                        <input type="text">
+                    </label>
+
+                    <label id="plataformaLabel">
+                        Plataforma:
+                        <select id="plataformaSelect" name="plataforma">
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="PC Epic">PC Epic</option>
+                            <option value="PC Steam">PC Steam</option>
+                            <option value="PS5">PS5</option>
+                            <option value="Xbox Series">Xbox Series</option>
+                            <option value="Nintendo Switch">Nintendo Switch</option>
+                            <option value="Mobil">Mobil</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <!-- Input oculto para cuando seleccionan Other -->
+                        <input type="text" id="plataformaInput" class="hidden-input"
+                            placeholder="Escribe la plataforma...">
+                    </label>
+
+                    <label>
+                        Seleccione imagen del juego:
+                        <input type="file">
+                    </label>
+
+                    <button>Agregar Juego</button>
+                </form>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--espacio para la seccion de juegos ya terminados-->
+
+
+        <section class="juegos_terminados">
+            <h1 class="juegos_terminados__titulo">JUEGOS TERMINADOS</h1>
+            <div class="juegos_terminados__container">
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    <!--aqui empiza el footer-->
+    <footer>
+        <div class="container__footer">
+            <a href="https://www.aluracursos.com/" target="_blank" class="footer-link">
+                <img src="imagenes/Property 1=Black.svg" alt="Alura Geek">
+            </a>
+            <a href="https://edgarfloresdev.netlify.app/" target="_blank" class="footer-link">
+                <img src="imagenes/ChatGPT Image 3 feb 2026, 12_25_40 a.m..png" alt="Logo 2">
+            </a>
+            <a href="https://github.com/EdRavDev" target="_blank" class="footer-link">
+                <img src="imagenes/githublogo.png" alt="GitHub">
+            </a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="app.js?v=5"></script>
+</body>
+
+</html>
