@@ -55,7 +55,7 @@ function crearCard(juego) {
     }
 
     card.innerHTML = `
-        <img src="${juego.image_url || 'imagenes/header alurageek.png'}" alt="${juego.name}">
+        <img src="${juego.image_url || 'assets/img/ui/header alurageek.png'}" alt="${juego.name}">
         <div class="card_info">
             <p>${juego.name}</p>
             <p>${juego.platform}</p>
@@ -194,8 +194,8 @@ const themeIcon = document.getElementById('theme-icon');
 const body = document.body;
 const homeButton = document.getElementById('btn-home');
 
-const iconMoon = "imagenes/moon.png";
-const iconSun = "imagenes/sun.png";
+const iconMoon = "assets/img/ui/moon.png";
+const iconSun = "assets/img/ui/sun.png";
 
 if (localStorage.getItem('theme') === 'light') {
     body.classList.add('light-mode');

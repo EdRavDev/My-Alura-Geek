@@ -33,7 +33,7 @@
 }
 
 .title_container {
-    background-image: url("imagenes/web_developer_wallpaper__code__by_plusjack_d7bmt54-fullview.jpg");
+    background-image: url("../img/ui/web_developer_wallpaper__code__by_plusjack_d7bmt54-fullview.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -48,7 +48,7 @@
     align-items: start;
     gap: 2rem;
     padding: 2rem;
-    background-image: url("./imagenes/");
+    background-image: url("../img/ui/");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

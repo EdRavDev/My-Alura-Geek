@@ -1,7 +1,41 @@
-Poyecto AluraGeek
-Este es mi version del proyecto AluraGeek, se trabajo con HTML, CSS y JavaScript asincrono, uso del DOM para la interactividad, responsive design con media queries, ademas de que se trabajo con supabase para la base de datos y para la autenticacion del usuario.
+# Proyecto AluraGeek
 
-Ire subiendo a lo largo del tiempo los cambios que se hicieron en el proyecto.
+Este es mi versión del proyecto AluraGeek. Se trabajó con HTML, CSS y JavaScript asíncrono, uso del DOM para la interactividad, responsive design con media queries, además de que se trabajó con Supabase para la base de datos y almacenamiento de imágenes.
 
-Intrucciones para el uso del program:
-Como se uso supabase para la base de datos, se limita a 1GB de almacenamiento, por lo que se recomienda borrar los juegos una vez que se haya terminado de usar el programa.
+## 🚀 Tecnologías Utilizadas
+- HTML5
+- CSS3 (Grid, Flexbox, Variables CSS)
+- JavaScript Vanilla (Async/Await, DOM Manipulation)
+- Supabase (PostgreSQL + Storage)
+
+## 🔐 Nota sobre la API Key
+
+**¿Por qué la API key está visible en el código?**
+
+La key que aparece en `app.js` es la **"Publishable Key"** (también llamada "anon key") de Supabase. Esta key está **diseñada para ser pública** y es completamente seguro incluirla en el frontend.
+
+**Seguridad:**
+- ✅ Es la key pública de Supabase (no es un secreto)
+- ✅ La seguridad real viene de las **Row Level Security (RLS) Policies** configuradas en la base de datos
+- ✅ Solo permite operaciones que específicamente autoricé mediante políticas
+- ❌ La "Service Role Key" (privada) **NO** está en el código
+
+Según la documentación oficial de Supabase:
+> "Publishable keys can be safely shared publicly"
+
+**Si quieres clonar este proyecto:**
+1. Crea tu propia cuenta en [Supabase](https://supabase.com)
+2. Crea un nuevo proyecto
+3. Ejecuta los scripts SQL de la carpeta raíz para crear las tablas y políticas
+4. Reemplaza `SUPABASE_URL` y `SUPABASE_KEY` en `app.js` con tus propias credenciales
+
+## 📝 Instrucciones de Uso
+
+Como se usa Supabase para la base de datos, se limita a 1GB de almacenamiento en el plan gratuito, por lo que se recomienda:
+- Borrar juegos que ya no necesites
+- Comprimir imágenes antes de subirlas
+- El proyecto está optimizado para uso personal/educativo
+
+## 📚 Documentación
+
+Iré subiendo a lo largo del tiempo los cambios que se hicieron en el proyecto. Revisa el archivo `walkthrough.md` en la carpeta del proyecto para una guía completa paso a paso.
