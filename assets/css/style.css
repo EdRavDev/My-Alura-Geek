@@ -643,6 +643,13 @@ footer {
         /* Let height adjust naturally */
         margin: 0;
     }
+
+    /* Override sticky header on mobile/tablet portrait so it scrolls away */
+    header {
+        position: relative !important;
+        /* Force override */
+        top: auto !important;
+    }
 }
 
 /* Specific Phone Optimizations (iPhone/Android) */
@@ -653,11 +660,13 @@ footer {
         padding: 0 0.5rem;
     }
 
-    /* Override sticky header on mobile so it scrolls away */
-    header {
-        position: relative;
-        top: auto;
+    /* Header: Scale down elements to fit tight width */
+    .header-container {
+        padding: 0 0.5rem;
     }
+
+
+
 
 
     .logo-edrav {
